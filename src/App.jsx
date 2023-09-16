@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import  { Header } from "./pages/home/home.jsx";
+import  { Header } from "./Pages/Home/home.jsx"
+import  { Home } from "./pages/home/home.jsx";
+import { Login } from "./Components/Login/login.jsx";
 
 function App() {
   return (
@@ -9,14 +11,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login/*" element={<Login />} />
-          <Route
-            path="/funcionarios/*"
-            element={
-              <Private>
-                <Employees />
-              </Private>
-            }
-          />
         </Routes>
       </BrowserRouter>
     </div>
