@@ -1,4 +1,4 @@
-import { auth, storage } from "./firebase";
+import { auth, storage } from "../../../firebase";
 import {
   deleteObject,
   getDownloadURL,

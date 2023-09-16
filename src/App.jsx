@@ -1,10 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
-import Header from "./components/Header";
-import Login from "./components/Login/Login";
-import Private from "./Private";
-import Employees from "./components/Employees/Employees";
-import Home from "./Home";
+import  { Header } from "./pages/home/home.jsx";
 
 function App() {
   return (
