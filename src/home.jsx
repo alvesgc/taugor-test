@@ -1,8 +1,9 @@
+import { onAuthStateChanged } from "firebase/auth";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./Home.module.css";
 import { auth } from "./services/firebase";
-import { onAuthStateChanged } from "firebase/auth";
-import { styles } from "./home.modules.scss"
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,12 +19,12 @@ const Home = () => {
       });
     }
     checkLogin();
-  }, []);
+  },);
 
   return (
     <div className="container">
       <div>
-        <h1> clasName={styles.title}</h1>
+      <h1 className={styles.title}>Gerencie documentos de forma dinâmica</h1>
       </div>
     </div>
   );
