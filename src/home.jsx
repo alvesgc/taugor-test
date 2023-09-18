@@ -22,9 +22,12 @@ const Home = () => {
   },[]);
 
   return (
-    <div className="container">
+    <div className={`container ${styles.home}`}>
       <div>
-      <h1 className={styles.title}>Gerencie documentos de forma dinâmica</h1>
+      <h1 className={styles.title}>Gerencie sua empresa de forma fácil</h1>
+      <p className={styles.preview}>Trazendo facilidade no gerenciamento de sua empresa com Taugor. <br/>
+        Aumentando sua produtivadade de maneira fácil.<br/>
+        Armazene e organize seus documentos em um local seguro.</p>
       </div>
     </div>
   );
