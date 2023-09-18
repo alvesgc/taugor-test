@@ -14,12 +14,12 @@ const Home = () => {
         if (user) {
           const userData = { user: user.uid, email: user.email };
           localStorage.setItem("@detailUser", JSON.stringify(userData));
-          navigate("/funcionarios");
+          navigate("/dashboard");
         }
       });
     }
     checkLogin();
-  },);
+  },[]);
 
   return (
     <div className="container">
